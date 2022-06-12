@@ -22,7 +22,7 @@ const bacaData = (fnCallback) => {
   getCurFile((firstWord) => {
     getNextFile(firstWord, (secondWord) => {
       getLastFile(secondWord, (arr) => {
-        fnCallback(null, arr);
+        fnCallback(arr);
       });
     })
   });
